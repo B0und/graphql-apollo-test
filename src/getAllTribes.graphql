@@ -1,0 +1,6 @@
+query getAllTribes {
+  allTribes {
+    id
+    title
+  }
+}
