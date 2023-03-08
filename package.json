@@ -4,17 +4,22 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "codegen --watch",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "run-server": "json-graphql-server db.cjs --p 4000",
-    "codegen": "graphql-codegen --config codegen.ts"
+    "codegen": "graphql-codegen --config codegen.ts",
+    "lint": "eslint ./src --fix"
   },
   "dependencies": {
     "@apollo/client": "^3.7.10",
     "graphql": "^16.6.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.2",
+    "styled-components": "^5.3.8",
+    "zustand": "^4.3.6"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "3.2.2",
@@ -23,6 +28,7 @@
     "@graphql-codegen/typescript-react-apollo": "^3.3.7",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
     "@vitejs/plugin-react-swc": "^3.0.0",

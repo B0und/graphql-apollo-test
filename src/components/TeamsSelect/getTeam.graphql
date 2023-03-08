@@ -1,0 +1,9 @@
+query getTeamsByTribeId($tribe_id: ID!) {
+  Tribe(id: $tribe_id) {
+    id
+    Teams {
+      id
+      title
+    }
+  }
+}
